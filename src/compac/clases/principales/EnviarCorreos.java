@@ -7,8 +7,6 @@ package compac.clases.principales;
  
 import compac.vista.principal.alertas.Alerta;
 import java.util.Properties;
-import javax.activation.DataHandler;
-import javax.activation.FileDataSource;
 import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.Session;
@@ -53,7 +51,7 @@ public class EnviarCorreos {
         this(usuarioCorre, password, "", "", destinatario, asunto, mensaje);
     }
 
-    public boolean sendMail() {
+   /* public boolean sendMail() {
         try {
             Properties props = new Properties();
             props.put("mail.smtp.host", "smtp.gmail.com");
@@ -70,7 +68,7 @@ public class EnviarCorreos {
             BodyPart adjunto = new MimeBodyPart();
             if (!rutaArchivo.equals("")) {
                 adjunto.setDataHandler(
-                        new DataHandler(new FileDataSource(rutaArchivo)));
+                      new DataHandler(new FileDataSource(rutaArchivo)));
                 adjunto.setFileName(nombreArchivo);
             }
 
@@ -104,6 +102,6 @@ public class EnviarCorreos {
         } catch (Exception e) {
             e.printStackTrace();
             return false;
-        }
+        }*/
     }
-}
+
