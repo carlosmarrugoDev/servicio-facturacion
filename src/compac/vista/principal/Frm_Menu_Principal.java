@@ -113,7 +113,6 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -143,6 +142,14 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        txtSanitario = new javax.swing.JTextField();
+        txtId = new javax.swing.JTextField();
+        txtDescripcion = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        txtConcentracion1 = new javax.swing.JTextField();
+        txtStock1 = new javax.swing.JTextField();
+        txtCosto1 = new javax.swing.JTextField();
+        txtPrecio1 = new javax.swing.JTextField();
         jPanel16 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -603,8 +610,6 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 1151, -1));
 
-        jTabbedPane1.addTab("tab1", jPanel3);
-
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 5, -1, -1));
@@ -751,6 +756,30 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
         jLabel13.setText("*");
         jPanel15.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 20, 20));
 
+        txtSanitario.setText("jTextField1");
+        jPanel15.add(txtSanitario, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 100, 140, -1));
+
+        txtId.setText("jTextField1");
+        jPanel15.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 180, -1));
+
+        txtDescripcion.setText("jTextField1");
+        jPanel15.add(txtDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 180, -1));
+
+        jTextField4.setText("jTextField1");
+        jPanel15.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 180, -1));
+
+        txtConcentracion1.setText("jTextField1");
+        jPanel15.add(txtConcentracion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 180, -1));
+
+        txtStock1.setText("jTextField1");
+        jPanel15.add(txtStock1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 60, 130, -1));
+
+        txtCosto1.setText("jTextField1");
+        jPanel15.add(txtCosto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 130, -1));
+
+        txtPrecio1.setText("jTextField1");
+        jPanel15.add(txtPrecio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 120, -1));
+
         jPanel14.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
 
         jPanel16.setBackground(new java.awt.Color(0, 102, 102));
@@ -876,7 +905,7 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel14);
 
-        jPanel4.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 550));
+        jPanel4.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1150, 550));
 
         jTabbedPane1.addTab("tab2", jPanel4);
 
@@ -2954,9 +2983,8 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
                 .addGroup(jPanel54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rbtTotal)
                     .addComponent(rbtCategoria)
-                    .addGroup(jPanel54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(rbtEstado)
-                        .addComponent(rbtId)))
+                    .addComponent(rbtEstado)
+                    .addComponent(rbtId))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 310, Short.MAX_VALUE)
                 .addComponent(btnGenerar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(147, 147, 147))
@@ -4191,10 +4219,10 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
         //        Date fec = jtb_datos.getValueAt(row, 7).toString();
         txtId.setText(jtb_datos.getValueAt(row, 0).toString());
         txtDescripcion.setText(jtb_datos.getValueAt(row, 2).toString());
-        txtConcentracion.setText(jtb_datos.getValueAt(row, 3).toString());
-        txtStock.setText(jtb_datos.getValueAt(row, 4).toString());
-        txtCosto.setText(jtb_datos.getValueAt(row, 5).toString());
-        txtPrecio.setText(jtb_datos.getValueAt(row, 6).toString());
+        txtSanitario.setText(jtb_datos.getValueAt(row, 3).toString());
+        txtSanitario.setText(jtb_datos.getValueAt(row, 4).toString());
+        txtSanitario.setText(jtb_datos.getValueAt(row, 5).toString());
+        txtSanitario.setText(jtb_datos.getValueAt(row, 6).toString());
         txtSanitario.setText(jtb_datos.getValueAt(row, 8).toString());
         //        jdtFecha.setDate(fec);
 
@@ -4212,23 +4240,23 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
         double costo, precio;
         //VALIDAR CAMPOS PARA QUE TODOS ESTEN LLENOS
         //--------------------------------------------------
-        if (txtDescripcion.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtStock.getText().isEmpty() || txtPresentacion.getText().isEmpty()
-            || txtCosto.getText().isEmpty() || txtPrecio.getText().isEmpty() || txtLaboratorio.getText().isEmpty() || txtConcentracion.getText().isEmpty() ) {
+        if (txtDescripcion.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtPresentacion.getText().isEmpty()
+            || txtSanitario.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtLaboratorio.getText().isEmpty() || txtSanitario.getText().isEmpty() ) {
             JOptionPane.showMessageDialog(this, "Por favor rellene todos los campos");
             //--------------------------------------------------
         } else {
-            costo= Double.parseDouble(txtCosto.getText());
-            precio= Double.parseDouble(txtPrecio.getText());
+            costo= Double.parseDouble(txtSanitario.getText());
+            precio= Double.parseDouble(txtSanitario.getText());
 
             if(costo > 0){
                 if (precio > costo){
 
                     String ID = txtId.getText();
                     String Descripcion = txtDescripcion.getText();
-                    String Concentracion = txtConcentracion.getText();
-                    int Stock = Integer.parseInt(txtStock.getText());
-                    float Costo = Float.parseFloat(txtCosto.getText());
-                    float Precio = Float.parseFloat(txtPrecio.getText());
+                    String Concentracion = txtSanitario.getText();
+                    int Stock = Integer.parseInt(txtSanitario.getText());
+                    float Costo = Float.parseFloat(txtSanitario.getText());
+                    float Precio = Float.parseFloat(txtSanitario.getText());
                     String RegistroSanitario = txtSanitario.getText();
 
                     Date Fecha = jdtFecha.getDate();
@@ -4272,21 +4300,21 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
         double costo, precio;
         //VALIDAR CAMPOS PARA QUE TODOS ESTEN LLENOS
         //--------------------------------------------------
-        if (txtDescripcion.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtStock.getText().isEmpty() || txtPresentacion.getText().isEmpty()
-            || txtCosto.getText().isEmpty() || txtPrecio.getText().isEmpty() || txtLaboratorio.getText().isEmpty() || txtConcentracion.getText().isEmpty() ) {
+        if (txtDescripcion.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtPresentacion.getText().isEmpty()
+            || txtSanitario.getText().isEmpty() || txtSanitario.getText().isEmpty() || txtLaboratorio.getText().isEmpty() || txtSanitario.getText().isEmpty() ) {
             JOptionPane.showMessageDialog(this, "Por favor rellene todos los campos");
             //--------------------------------------------------
         } else {
-            costo= Double.parseDouble(txtCosto.getText());
-            precio= Double.parseDouble(txtPrecio.getText());
+            costo= Double.parseDouble(txtSanitario.getText());
+            precio= Double.parseDouble(txtSanitario.getText());
             if (precio > costo){
 
                 String ID = txtId.getText();
                 String Descripcion = txtDescripcion.getText();
-                String Concentracion = txtConcentracion.getText();
-                int Stock = Integer.parseInt(txtStock.getText());
-                float Costo = Float.parseFloat(txtCosto.getText());
-                float Precio = Float.parseFloat(txtPrecio.getText());
+                String Concentracion = txtSanitario.getText();
+                int Stock = Integer.parseInt(txtSanitario.getText());
+                float Costo = Float.parseFloat(txtSanitario.getText());
+                float Precio = Float.parseFloat(txtSanitario.getText());
                 String RegistroSanitario = txtSanitario.getText();
 
                 Date Fecha = jdtFecha.getDate();
@@ -4346,14 +4374,14 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
 
         txtId.setText("");
         txtDescripcion.setText("");
-        txtCosto.setText("");
-        txtPrecio.setText("");
+        txtSanitario.setText("");
+        txtSanitario.setText("");
         txtPresentacion.setText("");
         chbEstado.setSelected(false);
         txtLaboratorio.setText("");
-        txtConcentracion.setText("");
         txtSanitario.setText("");
-        txtStock.setText("");
+        txtSanitario.setText("");
+        txtSanitario.setText("");
         txtDescripcion.requestFocus();
     }//GEN-LAST:event_jbt_limpiarActionPerformed
 
@@ -6270,7 +6298,6 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel29;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel33;
@@ -6344,6 +6371,7 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField4;
     private javax.swing.JButton jbt_limpiar;
     private javax.swing.JComboBox jcb_Sexo;
     private javax.swing.JCheckBox jchEstado;
@@ -6385,8 +6413,11 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
     public static javax.swing.JTextField txtClave;
     public static javax.swing.JTextField txtCodigoProducto;
     public static javax.swing.JTextField txtComprobante;
+    private javax.swing.JTextField txtConcentracion1;
     public static javax.swing.JTextField txtConcentracionProducto;
     private org.edisoncor.gui.textField.TextFieldRectBackground txtCorreoCliente;
+    private javax.swing.JTextField txtCosto1;
+    private javax.swing.JTextField txtDescripcion;
     private org.edisoncor.gui.textField.TextFieldRectBackground txtDescripcion1;
     private org.edisoncor.gui.textField.TextFieldRectBackground txtDescripcion5;
     public static javax.swing.JLabel txtDescripcionProducto;
@@ -6401,6 +6432,7 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
     private javax.swing.JTextField txtFechas;
     private javax.swing.JLabel txtHora;
     private javax.swing.JTextField txtIGV;
+    private javax.swing.JTextField txtId;
     public static javax.swing.JTextField txtId1;
     public static javax.swing.JTextField txtIdEmpleado;
     public static javax.swing.JTextField txtIdProveedor;
@@ -6413,9 +6445,12 @@ public class Frm_Menu_Principal extends javax.swing.JFrame {
     public static javax.swing.JTextField txtNombreProveedor;
     public static javax.swing.JTextField txtNombres1;
     public static javax.swing.JTextField txtNumeroCompra;
+    private javax.swing.JTextField txtPrecio1;
     public static javax.swing.JTextField txtPrecioProducto;
     public static javax.swing.JTextField txtPresentacionProducto;
     public static javax.swing.JTextField txtRuc;
+    private javax.swing.JTextField txtSanitario;
+    private javax.swing.JTextField txtStock1;
     private org.edisoncor.gui.textField.TextFieldRectBackground txtSubTotal;
     private javax.swing.JTextField txtSubTotal1;
     private javax.swing.JTextField txtTipoPago;
